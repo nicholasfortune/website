@@ -1,14 +1,16 @@
  input {
    width: 90%;
    border: transparent;
-   padding-bottom: 1%;
+   padding: 0.5%;
    margin-bottom: 2%;
  }
  .subject {
+  font-size: 1vw;
+  padding: 0.5%;
+  padding-right: 0%;
   resize: none;
   border: transparent;
   width: 100%;
-  padding-bottom: 1%;
   margin-bottom: 2%;
 }
  textarea {
@@ -69,6 +71,10 @@
   background-color:#ebeff0;
   box-shadow: 4px 4px 4px #00000044;
   padding: 1%;
+  padding-inline: 3%;
+ }
+ .text {
+  font-size: 1vw;
  }
  .flexcontainer {
     display: flex;
@@ -94,26 +100,28 @@
    .flexcontainer {
     flex-direction: column;
   }
+  .text {
+    font-size: 3vw;
+   }
   .inputbar {
     font-size: 3.5vw;
     width: 100%;
     margin: 0%;
    }
    button {
-    font-size: 3.5vw;
-    width: auto;
+    width: 40%;
     padding: 10%;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     margin: 1%;
-    margin-left: 70%;
+    margin-left: 60%;
     text-align: center;
     background-color: white;
     transition: background-color 0.1s ease;
     border: transparent;
   }
   .subject {
-    font-size: 3.5vw;
+    font-size: 3vw;
     width: 90%;
   }
   textarea {
