@@ -67,10 +67,25 @@ hr {
   height: 7vh;
   z-index: 10000;
 }
+.headerBold {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 2%;
+  text-decoration: none;
+  width: 20%;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  font-family: 'Arial', monospace; 
+  font-size: 1.3vw;
+}
 .headerText {
   color: black;
   margin: auto;
   text-decoration: none;
+  font-family: 'Arial', monospace;
+  font-weight: normal;
+  font-size: 1.3vw;
 }
 .footerContainer {
   align-self: center;
@@ -167,10 +182,25 @@ hr {
     height: 7vh;
     z-index: 10000;
   }
+  .headerBold {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 2%;
+  text-decoration: none;
+  width: 15%;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  font-family: 'Arial', monospace; 
+  font-size: 2.8vw;
+}
   .headerText {
     color: black;
     margin: auto;
     text-decoration: none;
+    font-family: 'Arial', monospace;
+    font-weight: normal;
+    font-size: 2.8vw;
   }
   .footerContainer {
     flex-direction: column;
