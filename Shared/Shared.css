@@ -10,6 +10,9 @@ html {
 body {
    margin: 0%;
 }
+a {
+  color: black;
+}
 #loading {
   display: flex;
   position: fixed;
@@ -19,19 +22,25 @@ body {
   background-position: center;
 }
 h1 {
-  font-family: 'Trebuchet MS', monospace;
+  font-family: 'Arial', monospace;
   font-weight: bold;
   font-size: 2.5vw;
   margin: 0%;
 }
 h2 {
-  font-family: 'Trebuchet MS', monospace;
+  font-family: 'Arial', monospace;
   font-weight: normal;
   font-size: 1.3vw;
   margin: 0%;
 }
 h3 {
-  font-family: 'Trebuchet MS', monospace;
+  font-family: 'Arial', monospace;
+  font-weight: lighter;
+  font-size: 0.8vw;
+  margin: 0%;
+}
+.h3 {
+  font-family: 'Arial', monospace;
   font-weight: lighter;
   font-size: 0.8vw;
   margin: 0%;
@@ -46,7 +55,7 @@ hr {
 }
 .text {
   color: black;
-  font-family: 'Trebuchet MS', monospace;
+  font-family: 'Arial', monospace;
   font-weight: normal;
   margin: 0%;
 }
@@ -113,19 +122,25 @@ hr {
 }
 @media (max-aspect-ratio: 1/1) {
   h1 {
-    font-family: 'Trebuchet MS', monospace;
+    font-family: 'Arial', monospace;
     font-weight: bold;
     font-size: 5vw;
     margin: 0%;
   }
   h2 {
-    font-family: 'Trebuchet MS', monospace;
+    font-family: 'Arial', monospace;
     font-weight: normal;
     font-size: 3.5vw;
     margin: 0%;
   }
   h3 {
-    font-family: 'Trebuchet MS', monospace;
+    font-family: 'Arial', monospace;
+    font-weight: lighter;
+    font-size: 3vw;
+    margin: 0%;
+  }
+  .h3 {
+    font-family: 'Arial', monospace;
     font-weight: lighter;
     font-size: 3vw;
     margin: 0%;
@@ -140,7 +155,7 @@ hr {
   }
   .text {
     color: black;
-    font-family: 'Trebuchet MS', monospace;
+    font-family: 'Arial', monospace;
     font-weight: normal;
     margin: 0%;
   }

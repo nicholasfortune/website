@@ -1,0 +1,37 @@
+.mathImage {
+  width: 30vw;
+  margin: 1%;
+  margin-inline: 20vw;
+}
+.imageContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+  .deploymentImage {
+    height: calc(30vw*0.75);
+  }
+  .deflectionImage {
+    padding-inline: 2vw;
+    width: 30vw;
+  }
+  @media (max-aspect-ratio: 1/1) {
+    .mathImage {
+      width: 80vw;
+      margin: 1%;
+      margin-inline: 5vw;
+    }
+    .imageContainer {
+      margin: 2vw;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+      .deploymentImage {
+        height: calc(50vw*0.75);
+      }
+      .deflectionImage {
+        padding-inline: 2vw;
+        width: 50vw;
+      }
+  }

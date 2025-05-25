@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Dragonfly Anti-Drone Missile - Nicholas Fortune">
+    <meta name="description" content="Nicholas Fortune's personal website, showcasing engineering projects and more.">
+    <title>Dragonfly Anti-Drone Missile - Nicholas Fortune</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="/Shared/Shared.css">
+    <link rel="stylesheet" type="text/css" href="/Portfolio/Projects/Styles.css">
+    <link rel="stylesheet" type="text/css" href="/Portfolio/Projects/Dragonfly/Styles.css">
+    <script src="/Shared/Scripts.js" defer></script>
+</head>
+<body>
+    <!--Header-->
+    <div class="header" id="header">
+        <a href="/" style="margin-top: auto; margin-bottom: auto; padding-left: 2%; text-decoration: none; width: 20%; color: black;"><h2 style="font-weight: bold; text-align: left;" aria-label="Go to the homepage">NICHOLAS FORTUNE</h2></a>
+        <a href="/" class="headerText" aria-label="Go to the homepage"><h2>HOME</h2></a>
+        <a href="/About/" class="headerText" aria-label="Go to Nicholas Fortune's about page"><h2>ABOUT</h2></a>
+        <a href="/Resume/" class="headerText" aria-label="Go to Nicholas Fortune's résumé"><h2>RÉSUMÉ</h2></a>
+        <a href="/Portfolio/" class="headerText" aria-label="Go to Nicholas Fortune's portfolio" style="text-decoration: underline black;"><h2>PORTFOLIO</h2></a>
+        <a href="/Contact/" class="headerText" aria-label="Go to the thank you page"><h2>CONTACT</h2></a>
+    </div>
+
+    <!--Hero Image-->
+    <div class="heroContainer" id="heroContainer">
+        <img src="/Portfolio/Projects/Dragonfly/Images/HeroImg.jpg" alt="Nicholas Fortune's anti-drone missile" class="heroImage" id="heroImage">
+        <div class="heroText" id="heroText">DRAGONFLY</div>
+    </div>
+    
+    <!--Body-->
+    <div class="postContainer">
+        <h1>Background</h1>
+        <h3>24ᵗʰ of May, 2025</h3>
+        <div class="splitContainer">
+            <h2 class="splitText">
+                This January, I started tinkering with my first <i>real</i> engineering project: a guided "anti-drone" missile. I'd made model rockets and RC planes and other things over the years, but nothing of this caliber.<br><br>
+                
+                <b>Here are some legal questions:</b><br>
+                Am I really going to hit a drone with it? No, that's irresponsible. Is it even capable of hitting a drone? No. The GPS is very imprecise, and it has no way of sensing the drone, either. It is given a coordinate before 
+                launch, and tries to get as close as possible to that coordinate.<br><br>
+                 
+                 So don't start hiding your drones, because the skies are safe for now.<br><br>
+
+                 Oh, yeah. And I haven't even launched this thing yet.
+            </h2>
+            <img src="/Portfolio/Projects/Dragonfly/Images/1.jpg" class="splitImage">
+        </div>
+        <h1 class="rightText">Designing</h1>
+        <div class="splitContainer" style="padding-bottom: 5vw;">
+            <img src="/Portfolio/Projects/Dragonfly/Images/2.jpg" class="splitImage">
+            <h2 class="splitText">
+                The missile is made of four sections:
+                <UL>
+                    <LI>The engine block
+                    <LI>The raceway
+                    <LI>The flight computer
+                    <LI>The recovery block
+                </UL>
+                All of which I made up as I designed the missile in Fusion 360. The designing process took 2 weeks, but it felt like a few days. This was the best part of the project, but we still have 13 more weeks to go until the last
+                time I worked on it. So what happens next?
+            </h2>
+        </div>
+        <img src="/Portfolio/Projects/Dragonfly/Images/Missile.png" width="100%">
+        <h1 style="margin-top: 5vw;">Flight Computer</h1>
+        <div class="splitContainer">
+            <h2 class="splitText">
+                The close second for my favorite part of the project. In the summer of 2024 I started watching <a href="https://www.youtube.com/@The8BitGuy">The 8-Bit Guy</a> and <a href="https://www.youtube.com/@BenEater">Ben Eater</a> and decided I wanted 
+                to make a breadboard 6502 computer. I read datasheets, read reddit threads until my eyes went blurry for good, and ultimately got more familiar with breadboards than I'd like to be, so this was right up my alley. 
+                I started with an Arduino Mega as the processor because of it's extra serial ports and memory, and from there I used:
+                <UL>
+                    <LI>A NEO-6M based GPS module from Amazon
+                    <LI>MPU6050 as the gyroscope
+                    <LI>IRLZ34N MOSFETS for power-cycling the gps
+                    <LI>Some unnamed LEDs and buzzers
+                </UL>
+                
+            </h2>
+            <img src="/Portfolio/Projects/Dragonfly/Images/5.jpg" class="splitImage">
+        </div>
+        <h1 class="rightText">Programming</h1>
+        <div class="splitContainer" style="padding-bottom: 1vw;">
+            <img src="/Portfolio/Projects/Dragonfly/Images/6.jpg" class="splitImage">
+            <h2 class="splitText">
+                I got started testing the GPS first because I'd never played with anything like it. It was magical- up until I needed to increase the GPS sample rate. I spent 3, long, grueling weeks trying everything I could think of, 
+                until I figured it out! If you go to the u-blox website, go to an <a href="https://www.u-blox.com/en/product/neo-m8-series?legacy=Current#Documentation-&-resources">entirely different GPS module</a>, find the 
+                <a href="https://content.u-blox.com/sites/default/files/products/documents/u-blox8-M8_ReceiverDescrProtSpec_UBX-13003221.pdf">datasheet</a> and scroll through 174 pages of datasheet hell until you find the CFG-RATE 
+                command, and then encode it with the 8-bit <a href="https://en.wikipedia.org/wiki/Fletcher's_checksum">fletcher's checksum algorithm</a>, you will get this:<br>
+                <p style="margin-top: 2%; margin-bottom: 2%;" class="h3">0xB5, 0x62, 0x06, 0x08, 0x06, 0x00, 0xC8, 0x00, 0x01, 0x00, 0x00, 0x00, 0xDD, 0x68</p>
+                That is the culmination of 3 weeks' work. Amazing.<br><br>
+
+                But what's even more amazing is what it allows us to do. This command tells the GPS to try to change the GPS sample rate from 1hz to 5hz, which is still bad for a mach 0.4 missile, but it's 5 times better than what we had before, so it's a W.
+            </h2>
+        </div>
+        <h2>
+            But once again, the GPS decided it needed to ruin my progress even more, so it started noising up all of the data, making an ACK response rare and successful boot near impossible! I tried everything! Shortening the data wires- 
+            actually, that's all I tried. So I had a few options, I could:
+            <b><ol style="list-style-type: lower-alpha;">
+                <li>Shorten the wire even more to reduce noise
+                <li>Get a better GPS module with a better checksum algorithm
+                <li>Brute force the command 10 times
+            </ol></b>
+            If you guessed "c" give yourself a gold star!<br><br>
+
+            Oh yeah and also the GPS would get angry every time I booted it without power-cycling it so yeah<br><br><br><br><br>
+
+            Next thing I did was work on the math to point the rocket towards the target, and in a few minutes I made this:
+        </h2>
+        <img src="/Portfolio/Projects/Dragonfly/Images/Math.png" class="mathImage">
+        <h2>
+            What exactly it does I couldn't tell you. I live an all-vibes lifestyle. But now we got a robust frame on the <i>guided</i> part of the guided missile, so let's expand on it, shall we?<br><br>
+
+            So now, 5 times a second the GPS will give us data about our position, we'll do some math and then we're left with a beautiful target direction. While all of this is happening, 20 times a second the gyroscope will give us our <i>real</i> 
+            direction. The computer will then also do some math for the fins (not as interesting as the above math, though) to figure out where the fins should be pointed to make our <i>real</i> direction into our target direction, which will then 
+            be sent off to the fins to make them move in that direction.<br><br>
+
+            So finally, we do some parachute deployment tests, do some fin deflection tests, and bada bing bada boom we're at the present day!
+        </h2>
+        <div class="imageContainer">
+            <img class="deploymentImage" src="/Portfolio/Projects/Dragonfly/Images/Deployment.png" alt="">
+            <img class="deflectionImage" src="/Portfolio/Projects/Dragonfly/Images/Deflection.jpg" alt="">
+        </div>
+        <h1 style="margin-top: 5vw;">Final Thoughts</h1>
+        <div class="splitContainer">
+            <h2 class="splitText">
+                So, could I launch this thing right now? <b>Yes.</b> But could I do it with full confidence it wouldn't hurt someone? No. And that's just too much of a risk. Anyway, thanks for reading, and I hope to update this soon with a flight test.<br><br>
+                Thanks, <i>Nicholas Fortune</i>
+            </h2>
+            <img src="/Portfolio/Projects/Dragonfly/Images/7.jpg" class="splitImage">
+        </div>
+    </div>
+    <!--Footer-->
+    <div id="footer"></div>
+</body>
+</html>
