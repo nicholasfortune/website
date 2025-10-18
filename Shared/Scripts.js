@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.text())
         .then(html => document.getElementById("footer").innerHTML = html)
         .catch(error => console.error("Error loading footer:", error));
+    console.log(document.getElementById("header"));
     fetch("/Shared/header.html")
         .then(response => response.text())
         .then(html => document.getElementById("header").innerHTML = html)
