@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Error loading footer:", error));
     fetch("/Shared/header.html")
         .then(response => response.text())
-        .then(html => document.getElementById("footer").innerHTML = html)
-        .catch(error => console.error("Error loading footer:", error));
+        .then(html => document.getElementById("header").innerHTML = html)
+        .catch(error => console.error("Error loading header:", error));
 });
 
 function headerManager() {
