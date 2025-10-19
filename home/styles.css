@@ -1,0 +1,162 @@
+ .heroContainer {
+   padding-top: 7vh;
+   position: relative;
+   width: 100%;
+   height: calc(50vw - 7vh);
+   overflow: hidden;
+   margin-bottom: 33vh;
+ }
+ .heroImage {
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 0;
+ }
+ .heroText {
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   transform: translate(0%, -50%);
+   z-index: 1000;
+   font-family: 'Arial', monospace;
+   font-weight: bold;
+   text-align: center;
+   font-size: 8vw;
+   user-select: none;
+   text-shadow: 2px 2px 40px rgba(255, 255, 255, 0.125);
+ }
+ .bodyContainer {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+ }
+ .aboutMeContainer {
+   display: flex;
+   width: 60%;
+   margin: auto;
+   margin-top: 10%;
+   margin-bottom: 10%;
+   justify-content: center;
+   align-items: center;  
+ }
+ .aboutMeImage {
+   order: 0;
+   height: 25vw;
+   width: auto;
+   margin: 0%;
+   margin-bottom: 6px;
+   margin-right: 2%;
+   box-shadow: 4px 4px 4px #00000044;
+ }
+ .aboutMeText {
+   flex-grow: 5;
+   order: 1;
+   width: 20%;
+   margin: auto;
+ }
+ .featuredProjectContainer {
+   display: flex;
+   width: 60%;
+   margin: auto;
+   margin-top: 5%;
+   margin-bottom: 5%;
+ }
+ .featuredProjectImage {
+   order: 1;
+   height: 25vw;
+   width: auto;
+   margin: 0%;
+   margin-bottom: 6px;
+   margin-left: 2%;
+   box-shadow: 4px 4px 4px #00000044;
+ }
+ .featuredProjectText {
+   flex-grow: 5;
+   order: 0;
+   width: 20%;
+   margin: auto;
+ }
+ .currentlyWorkingOnContainer {
+   display: flex;
+   width: 60%;
+   margin: auto;
+   margin-top: 5%;
+   margin-bottom: 5%;
+ }
+ .currentlyWorkingOnImage {
+   order: 0;
+   height: 25vw;
+   width: auto;
+   margin: 0%;
+   margin-bottom: 6px;
+   margin-right: 2%;
+   box-shadow: 4px 4px 4px #00000044;
+ }
+ .currentlyWorkingOnText {
+   flex-grow: 5;
+   order: 1;
+   width: 20%;
+   margin: auto;
+ }
+ @media (max-aspect-ratio: 1/1) {
+  .heroContainer {
+    height: calc(75vw - 7vh);
+    margin-bottom: 15vh;
+  }
+  .heroText {
+    font-size: 9vw;
+    text-shadow: 2px 2px 80px rgba(255, 255, 255, 0.75);
+  }
+  .aboutMeContainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    justify-content: center;
+    align-items: center;  
+  }
+  .aboutMeImage {
+    order: 0;
+    height: 40vw;
+    width: auto;
+    margin: 0%;
+    margin-bottom: 6px;
+    margin-right: 2%;
+    box-shadow: 4px 4px 4px #00000044;
+  }
+  .featuredProjectContainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  .featuredProjectImage {
+    order: 1;
+    height: 30vw;
+    width: auto;
+    margin: 0%;
+    margin-bottom: 6px;
+    margin-left: 2%;
+    box-shadow: 4px 4px 4px #00000044;
+  }
+  .currentlyWorkingOnContainer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  .currentlyWorkingOnImage {
+    order: 0;
+    height: 40vw;
+    width: auto;
+    margin: 0%;
+    margin-bottom: 6px;
+    margin-right: 2%;
+    box-shadow: 4px 4px 4px #00000044;
+  }
+ }

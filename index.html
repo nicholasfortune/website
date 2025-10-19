@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/Featured Image/Image.jpg">
+    <meta name="title" content="Nicholas Fortune - Home">
+    <meta name="description" content="Nicholas Fortune's personal website, showcasing engineering projects and more.">
+    <title>Home - Nicholas Fortune</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="/shared/shared.css">
+    <link rel="stylesheet" type="text/css" href="/home/styles.css">
+    <script src="/shared/scripts.js" defer></script>
+</head>
+<body>
+    <!--Header-->
+    <div class="header" id="header"></div>
+
+    <!--Hero Image-->
+    <div class="heroContainer" id="heroContainer">
+        <picture>
+            <source srcset="/home/images/high/HeroImg.webp" media="(min-width: 1001px)">
+            <source srcset="/home/images/HeroImg.webp" media="(max-width: 1000px)">
+            <img src="/home/images/HeroImg.jpg" alt="Nicholas Fortune's anti-drone missile" class="heroImage" id="heroImage">
+        </picture>
+        <div class="heroText" id="heroText">NICHOLAS FORTUNE</div>
+    </div>
+    
+    <!--Body-->
+    <div class="bodyContainer">
+        <div class="aboutMeContainer">
+            <img src="/home/images/Me.webp" class="aboutMeImage" alt="A photo of Nicholas Fortune">
+            <div class="aboutMeText">
+                <h1>About me</h1>
+                <h2>March 2025</h2>
+                <p>I am Nicholas Fortune. I'm a mechatronics engineer with experience in web design, programming, CAD and 3D printing, cinematography, and self-hosting. I enjoy engineering solutions for personal projects and problems while seeking new challenges to take on.</p>
+            </div>
+        </div>
+        <a href="/Projects/Dragonfly" style="text-decoration: none; color: black;" class="featuredProjectContainer">
+            <img src="/home/images/FeaturedProject.webp" class="featuredProjectImage" alt="A photo of Nicholas Fortune's anti-drone missile">
+            <div class="featuredProjectText">
+                <h1>Featured Project</h1>
+                <h2>Click to go to project page</h2>
+                <p>"Dragonfly" Anti-Drone Missile</p>
+            </div>
+        </a>
+        <a href="/Projects/Dragonfly" style="text-decoration: none; color: black;" class="currentlyWorkingOnContainer">
+            <img src="/home/images/CurrentlyWorkingOn.webp" class="currentlyWorkingOnImage" alt="A photo of Nicholas Fortune's anti-drone missile">
+            <div class="currentlyWorkingOnText">
+                <h1>Currently Working On</h1>
+                <h2>Click to go to project page</h2>
+                <p>"Dragonfly" Anti-Drone Missile</p>
+            </div>
+        </a>
+    </div>
+
+    <!--Footer-->
+    <div id="footer"></div>
+</body>
+</html>

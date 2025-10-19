@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/Featured Image/Image.jpg">
+    <meta name="title" content="Nicholas Fortune - Portfolio">
+    <meta name="description" content="Nicholas Fortune's personal website, showcasing engineering projects and more.">
+    <title>Portfolio - Nicholas Fortune</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="/shared/shared.css">
+    <link rel="stylesheet" type="text/css" href="/portfolio/styles.css">
+    <script src="/shared/scripts.js" defer></script>
+</head>
+<body>
+    <!--Header-->
+    <div class="header" id="header"></div>
+
+    <!--Hero Image-->
+    <div class="heroContainer" id="heroContainer">
+        <picture>
+            <source srcset="/portfolio/images/high/HeroImg.webp" media="(min-width: 1001px)">
+            <source srcset="/portfolio/images/HeroImg.webp" media="(max-width: 1000px)">
+            <img src="/portfolio/images/HeroImg.jpg" alt="Nicholas Fortune's anti-drone missile" class="heroImage" id="heroImage">
+        </picture>
+        <div class="heroText" id="heroText">PORTFOLIO</div>
+    </div>
+    
+    <!--Body-->
+    <p style="text-align: center; width: 80%; margin-inline: auto;">These are <b>my best projects</b>. If you want to see a little of everything, check out the <a href="/gallery/">gallery</a>.</p>
+    <hr>
+    <div class="portfolioContainer" id="portfolioContainer">
+        <a href="/Projects/Dragonfly" class="portfolioImage" style="background: url(/portfolio/images/portfolio/Dragonfly.jpg) 50% 50% no-repeat; background-size: cover;">
+            <div class="portfolioTextbox">
+                <h2 class="portfolioDate">February 2025</h2>
+                <p class="portfolioTextTitle"><b>DRAGONFLY</b></p>
+                <h2 class="portfolioTextSub">Anti-Drone Missile</h2>
+            </div>
+        </a>
+    </div>
+
+    <!--Footer-->
+    <div id="footer"></div>
+</body>
+</html>
