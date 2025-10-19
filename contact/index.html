@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/Featured Image/Image.jpg">
+    <meta name="title" content="Nicholas Fortune - Contact">
+    <meta name="description" content="Nicholas Fortune's personal website, showcasing engineering projects and more.">
+    <title>Contact - Nicholas Fortune</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="/shared/shared.css">
+    <link rel="stylesheet" type="text/css" href="/contact/styles.css">
+    <script src="/shared/scripts.js" defer></script>
+</head>
+<body>
+    <!--Header-->
+    <div class="header" id="header"></div>
+
+    <!--Hero Image-->
+    <div class="heroContainer" id="heroContainer">
+        <picture>
+            <source srcset="/contact/images/high/HeroImg.webp" media="(min-width: 1001px)">
+            <source srcset="/contact/images/HeroImg.webp" media="(max-width: 1000px)">
+            <img src="/contact/images/HeroImg.jpg" alt="A man reading emails" class="heroImage" id="heroImage">
+        </picture>
+        <div class="heroText" id="heroText">CONTACT</div>
+    </div>
+    
+    <!--Body-->
+    <div class="contactContainer">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2501db75-07c0-4391-8ba6-a067ef160a9b">
+            <input type="hidden" name="subject" value="New Form Submission">
+            <input type="hidden" name="redirect" value="https:/nicholasfortune.ca/contact/thank-you">
+            <input type="checkbox" name="botcheck" style="display: none;" />
+            <div class="flexcontainer">
+              <div class="inputbar">
+                <label for="name"><h2>Your Name/Company</h2></label>
+                <input type="text" id="name" class="text" name="name" required>
+              </div>
+              <div class="inputbar">
+                <label for="email"><h2>Your Email</h2></label>
+                <input type="email" id="email" class="text" name="email" required>
+              </div>
+            </div>
+            <label for="messagesubject"><h2 style="margin-top: 0.5vw;">Subject</h2></label>
+            <input type="text" id="messagesubject" name="Message Subject" class="subject" required>
+            <label for="message"><p>Message</p></label>
+            <textarea id="message" name="message" class="text" required></textarea>
+            <button type="submit"><h2>Send</h2></button>
+          </form>
+    </div>
+
+    <!--Footer-->
+    <div id="footer"></div>
+</body>
+</html>

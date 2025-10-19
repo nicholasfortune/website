@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="/Featured Image/Image.jpg">
+    <meta name="title" content="Nicholas Fortune - About">
+    <meta name="description" content="Nicholas Fortune's about page">
+    <title>About - Nicholas Fortune</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="/shared/shared.css">
+    <link rel="stylesheet" type="text/css" href="/about/styles.css">
+    <script src="/shared/scripts.js" defer></script>
+</head>
+<body>
+    <!--Header-->
+    <div class="header" id="header"></div>
+
+    <!--Hero Image-->
+    <div class="heroContainer" id="heroContainer">
+        <picture>
+            <source srcset="/about/images/high/HeroImg.webp" media="(min-width: 1001px)">
+            <source srcset="/about/images/HeroImg.webp" media="(max-width: 1000px)">
+            <img src="/about/images/HeroImg.jpg" alt="Nicholas Fortune in Utah" class="heroImage" id="heroImage">
+        </picture>
+        <div class="heroText" id="heroText">ABOUT</div>
+    </div>
+    
+    <!--Body-->
+    <div class="aboutContainer">
+        <div class="aboutText">
+            <h1>I'm Nicholas Fortune.</h1>
+            <p>I am a mechatronics engineer with a passion for designing, building, and programming physical and digital systems. Whether it's an inconvenience like closing my blinds at night or a large project like developing an anti-drone missile, I always love engineering a solution. Whether working independently or in a team, I am committed to precision, efficiency, and continuous learning in all of my projects.
+            </p><br>
+            <div class="buttons">
+                <a href="/resume/" style="width: max-content; margin-inline: 1%; text-decoration: none;" aria-label="Go to Nicholas Fortune's résumé"><button class="button"><h2>RÉSUMÉ</h2></button></a>
+                <a href="/portfolio/"style="width: max-content; margin-inline: 1%; text-decoration: none;" aria-label="Go to Nicholas Fortune's portfolio"><button class="button"><h2>PORTFOLIO</h2></button></a>
+            </div>
+        </div>
+        <div class="aboutImage">
+            <img src="/home/images/Me.webp" class="aboutImage" alt="A photo of Nicholas Fortune">
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer"></div>
+</body>
+</html>
