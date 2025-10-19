@@ -1,11 +1,12 @@
+const mobile = window.matchMedia("(max-aspect-ratio: 1/1)")
+
 document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(headerManager);
-    fetch("/Shared/footer.html")
+    fetch("/shared/footer.html")
         .then(response => response.text())
         .then(html => document.getElementById("footer").innerHTML = html)
         .catch(error => console.error("Error loading footer:", error));
-    console.log(document.getElementById("footer"));
-    fetch("/Shared/header.html")
+    fetch("/shared/header.html")
         .then(response => response.text())
         .then(html => document.getElementById("header").innerHTML = html)
         .catch(error => console.error("Error loading header:", error));
@@ -23,9 +24,17 @@ function headerManager() {
     const heroImgWidth = parseInt(window.getComputedStyle(heroImg).width)
     const heroImgHeight = parseInt(window.getComputedStyle(heroImg).height)
     const heroContainerHeight = heroContainer.offsetHeight;
-    const headerHeight = header.offsetHeight;
     const fontSize = parseInt(getComputedStyle(heroText).fontSize, 10);
-    const textTransform = (scrollY + headerHeight) / 2;
+    headerHeight = 0;
+    if (!mobile.matches) {
+        const headerAlpha = scrollY / heroContainerHeight + 0.05;
+        header.style.backgroundColor = `rgba(235, 239, 240, ${headerAlpha})`;
+        headerHeight = 0;
+    } else {
+        header.style.backgroundColor = `rgba(235, 239, 240, 1)`;
+        headerHeight = header.offsetHeight / 2;
+    }
+    const textTransform = (scrollY / 2) + headerHeight;
     const newImgWidth = windowWidth + ((windowHeight - (-1 * (scrollY - windowHeight))) / 5);
     heroImg.style.width = `${newImgWidth}px`;
     const heroCenter = heroContainerHeight > heroImgHeight ? heroImgHeight / 2 : heroContainerHeight / 2;

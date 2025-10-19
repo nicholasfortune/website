@@ -53,7 +53,7 @@ hr {
 .header {
   position: fixed;
   display: flex;
-  background-color:#ebeff0;
+  background-color: rgba(235, 239, 240, 0);
   width: 100%;
   height: 7vh;
   z-index: 10000;
