@@ -1,0 +1,135 @@
+ input {
+   width: 90%;
+   border: transparent;
+   padding: 0.5%;
+   margin-bottom: 2%;
+ }
+ .subject {
+  font-size: 1vw;
+  padding: 0.5%;
+  padding-right: 0%;
+  resize: none;
+  border: transparent;
+  width: 100%;
+  margin-bottom: 2%;
+}
+ textarea {
+   resize: none;
+   border: transparent;
+   width: 100%;
+   padding-bottom: 15%;
+   margin-bottom: 2%;
+ }
+ button {
+   width: auto;
+   padding: 10%;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   margin: 1%;
+   margin-left: 75%;
+   text-align: center;
+   background-color: white;
+   transition: background-color 0.1s ease;
+   border: transparent;
+ }
+ button:hover {
+   background-color: rgb(215, 219, 221);
+ }
+ .heroContainer {
+  padding-top: 7vh;
+  position: relative;
+  width: 100%;
+  height: calc(25vw - 7vh);
+  overflow: hidden;
+  margin-bottom: 33vh;
+  }
+ .heroImage {
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 0;
+ }
+ .heroText {
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   transform: translate(0%, -50%);
+   z-index: 1000;
+   font-family: 'Arial', monospace;
+   font-weight: bold;
+   text-align: center;
+   font-size: 8vw;
+   user-select: none;
+   text-shadow: 2px 2px 40px rgba(255, 255, 255, 0.125);
+ }
+ .contactContainer {
+  width: 60%;
+  height: fit-content;
+  margin: auto;
+  background-color:#ebeff0;
+  box-shadow: 4px 4px 4px #00000044;
+  padding: 1%;
+  padding-inline: 3%;
+ }
+ .text {
+  font-size: 1vw;
+ }
+ .flexcontainer {
+    display: flex;
+    flex-direction: row;
+ }
+ .inputbar {
+  display:block;
+  width: 50%;
+  margin: auto;
+ }
+ @media (max-aspect-ratio: 1/1) {
+  .heroContainer {
+    height: calc(75vw - 7vh);
+    margin-bottom: 15vh;
+  }
+  .heroText {
+    font-size: 16vw;
+    text-shadow: 2px 2px 80px rgba(255, 255, 255, 0.75);
+  }
+  .contactContainer {
+    width: 80%;
+   }
+   .flexcontainer {
+    flex-direction: column;
+  }
+  .text {
+    font-size: 3vw;
+   }
+  .inputbar {
+    font-size: 3.5vw;
+    width: 100%;
+    margin: 0%;
+   }
+   button {
+    width: 40%;
+    padding: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 1%;
+    margin-left: 60%;
+    text-align: center;
+    background-color: white;
+    transition: background-color 0.1s ease;
+    border: transparent;
+  }
+  .subject {
+    font-size: 3vw;
+    width: 90%;
+  }
+  textarea {
+    font-size: 4vw;
+    resize: none;
+    border: transparent;
+    width: 95%;
+    padding-bottom: 15%;
+    margin-bottom: 2%;
+  }
+}

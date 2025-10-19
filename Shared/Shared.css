@@ -1,0 +1,248 @@
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar {
+  overflow: overlay;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+   margin: 0%;
+}
+a {
+  color: black;
+}
+#loading {
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2.5vw;
+  margin: 0%;
+}
+h2 {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 1.3vw;
+  margin: 0%;
+}
+h3 {
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 0.8vw;
+  margin: 0%;
+}
+hr {
+  width: 60%;
+  height: 2px;
+  background-color: black;
+  border: none;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.text {
+  color: black;
+  font-family: sans-serif;
+  font-weight: normal;
+  margin: 0%;
+}
+.header {
+  position: fixed;
+  display: flex;
+  background-color:#ebeff0;
+  width: 100%;
+  height: 7vh;
+  z-index: 10000;
+}
+.headerBold {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 2%;
+  text-decoration: none;
+  width: 20%;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  font-family: sans-serif; 
+  font-size: 0.8vw;
+}
+.headerText {
+  color: black;
+  margin: auto;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 0.8vw;
+}
+.footerContainer {
+  align-self: center;
+  margin-top: 33vh;
+  display: flex;
+  background-color:#ebeff0;
+  padding-inline: 15%;
+  width: 70%;
+  height: 33vh;
+}
+.footerLeft {
+  order: 0;
+  margin: auto;
+  width: 80%;
+  padding-inline: 10%;
+  display: flex;
+}
+.footerLeftContainer {
+  flex-direction: column;
+  text-align: center;
+  display: flex;
+  background-color:#ebeff0;
+  font-size: 1vw;
+  width: 100%;
+}
+.footerSocialLinks {
+  width: 50%;
+  display: flex;
+  height: 25%;
+  justify-content: center;
+  margin-inline: auto;
+}
+.footerLinks {
+  flex-grow: 5;
+  order: 1;
+  width: 30%;
+  padding: 2rem;
+}
+.footerLogoContainer {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: auto;
+}
+.footerLogos {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+@media (max-aspect-ratio: 1/1) {
+  h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 5vw;
+    margin: 0%;
+  }
+  h2 {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 3.5vw;
+    margin: 0%;
+  }
+  h3 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 3vw;
+    margin: 0%;
+  }
+  .h3 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 3vw;
+    margin: 0%;
+  }
+  hr {
+    width: 60%;
+    height: 1px;
+    background-color: black;
+    border: none;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+  }
+  .text {
+    color: black;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin: 0%;
+  }
+  .header {
+    position: fixed;
+    display: flex;
+    background-color:#ebeff0;
+    width: 100%;
+    height: 7vh;
+    z-index: 10000;
+  }
+  .headerBold {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 2%;
+  text-decoration: none;
+  width: 15%;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  font-family: sans-serif; 
+  font-size: 2.8vw;
+}
+  .headerText {
+    color: black;
+    margin: auto;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 2.8vw;
+  }
+  .footerContainer {
+    flex-direction: column;
+    margin-top: 15vh;
+    display: flex;
+    background-color:#ebeff0;
+    padding: 0%;
+    padding-top: 5vw;
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+  }
+  .footerLeft {
+    padding: 0%;
+    order: 0;
+    width: 100%;
+    display: flex;
+  }
+  .footerLeftContainer {
+    width: 20%;
+    flex-direction: column;
+    display: flex;
+    background-color:#ebeff0;
+    width: 100%;
+  }
+  .footerSocialLinks {
+    width: 50%;
+    display: flex;
+    height: 15%;
+    justify-content: center;
+    margin-inline: auto;
+  }
+  .footerLinks {
+    padding: 0%;
+    padding-top: 3vw;
+    order: 1;
+    width: 100%;
+  }
+  .footerLogoContainer {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+  }
+  .footerLogos {
+    width: 100%;
+    max-height: 10vw;
+    height: auto;
+    object-fit: contain;
+  }
+}
