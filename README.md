@@ -9,11 +9,11 @@ In March of 2025, I decided I needed a website to stand out from other potential
 
 ## Features
  - **Responsive Design**
-   This website is media query-heavy. Every single page has been optimized for both performance, aesthetics, and accessibility on mobile and desktop alike.
+       This website is media query-heavy. Every single page has been optimized for both performance, aesthetics, and accessibility on mobile and desktop alike.
  - **Performance-Focused**
-   Every non-critical image will lazy load, and every image is heavily compressed for small screens, while reserving high-quality images for large screens, and using modern media formats like WEBP for sub 1-second page loads even on slow networks.
+       Every non-critical image will lazy load, and every image is heavily compressed for small screens, while reserving high-quality images for large screens, and using modern media formats like WEBP for sub 1-second page loads even on slow networks.
  - **User Experience**
-   Lightweight JavaScript controls blur, opacity, zoom, and other interactive effects based on how much the user scrolls
+       Lightweight JavaScript controls blur, opacity, zoom, and other interactive effects based on how much the user scrolls
 
 ## Credits
  - GitHub and YouTube logos belong to their respective owners.
