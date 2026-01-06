@@ -1,5 +1,5 @@
-# My Personal Website
-This is my personal website. I use it as a resume, a portfolio, and as a general central hub for all my online projects.
+# My Website
+This is my website. I use it as a resume, a portfolio, and as a general central hub for all my online projects.
 
 ![The home page on my website](.github/home.png)
 *The home page on nicholasfortune.ca*
