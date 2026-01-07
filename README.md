@@ -16,7 +16,7 @@ In March of 2025, I decided I needed a website to stand out from other potential
    Lightweight JavaScript controls blur, opacity, zoom, and other interactive effects based on how much the user scrolls
 
 ## Credits
- - GitHub and YouTube logos belong to their respective owners.
+ - All logos belong to their respective owners.
  - Any third-party libraries, icons, or assets used are credited to their creators.
 
 ## License

@@ -19,12 +19,13 @@
   top: 50%;
   transform: translate(0%, -50%);
   z-index: 1000;
-  padding-bottom: 3vw;
-  font-family: 'Arial', monospace;
+  padding-bottom: 4vw;
+  font-family: "Figtree", "Arial", sans-serif;
   font-weight: bold;
   text-align: center;
   font-size: 8vw;
   user-select: none;
+  text-shadow: 2px 2px 40px rgba(255, 255, 255, 0.125);
 }
 .heroSub {
   width: 100%;
@@ -32,7 +33,7 @@
   top: 50%;
   transform: translate(0%, -50%);
   z-index: 1000;
-  font-family: 'Arial', monospace;
+  font-family: "Figtree", "Arial", sans-serif;
   font-weight: normal;
   text-align: center;
   padding-top: 5.5vw;

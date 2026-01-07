@@ -1,50 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="/Featured Image/Image.jpg">
-    <meta name="title" content="Nicholas Fortune - About">
-    <meta name="description" content="Nicholas Fortune's about page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="/Featured Image/Image.jpg" />
+    <meta name="title" content="Nicholas Fortune - About" />
+    <meta name="description" content="Nicholas Fortune's about page" />
     <title>About - Nicholas Fortune</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="stylesheet" type="text/css" href="/shared/shared.css">
-    <link rel="stylesheet" type="text/css" href="/about/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" type="text/css" href="/shared/shared.css" />
+    <link rel="stylesheet" type="text/css" href="/about/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
     <script src="/shared/scripts.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <!--Header-->
     <div class="header" id="header"></div>
 
     <!--Hero Image-->
     <div class="heroContainer" id="heroContainer">
-        <picture>
-            <source srcset="/about/images/high/HeroImg.webp" media="(min-width: 1001px)">
-            <source srcset="/about/images/HeroImg.webp" media="(max-width: 1000px)">
-            <img src="/about/images/HeroImg.jpg" alt="Nicholas Fortune in Utah" class="heroImage" id="heroImage">
-        </picture>
-        <div class="heroText" id="heroText">ABOUT</div>
-    </div>
-    
-    <!--Body-->
-    <div class="aboutContainer">
-        <div class="aboutText">
-            <h1>I'm Nicholas Fortune.</h1>
-            <p>I am an aspiring mechatronics engineer with a passion for designing, building, and programming physical and digital systems. Whether working independently or in a team, I am committed to precision, efficiency, and continuous learning in all of my projects.
-                I’m proficient in web design, cinematography and PCB design, and I specialize in CAD and software development. My toolset includes Fusion 360 and programming in C++, C, Python, Lua, and JavaScript.
-            </p><br>
-            <div class="buttons">
-                <a href="/resume/" style="width: max-content; margin-inline: 1%; text-decoration: none;" aria-label="Go to Nicholas Fortune's résumé"><button class="button"><h2>RÉSUMÉ</h2></button></a>
-                <a href="/portfolio/"style="width: max-content; margin-inline: 1%; text-decoration: none;" aria-label="Go to Nicholas Fortune's portfolio"><button class="button"><h2>PORTFOLIO</h2></button></a>
-            </div>
-        </div>
-        <div class="aboutImage">
-            <img src="/home/images/Me.webp" class="aboutImage" alt="A photo of Nicholas Fortune">
-        </div>
+      <picture>
+        <source srcset="/about/images/high/HeroImg.webp" media="(min-width: 1001px)" />
+        <source srcset="/about/images/HeroImg.webp" media="(max-width: 1000px)" />
+        <img src="/about/images/HeroImg.jpg" alt="Nicholas Fortune in Utah" class="heroImage" id="heroImage" />
+      </picture>
+      <div class="heroText" id="heroText">ABOUT</div>
     </div>
 
+    <!--Body-->
+    <div class="aboutContainer">
+      <div class="aboutText">
+        <h1>I'm <span style="color: dodgerblue;">Nicholas Fortune</span>.</h1>
+        <subheader
+          ><a href="https://en.wikipedia.org/wiki/Collingwood,_Ontario" target="_blank"
+            >collingwood, ontario</a
+          ></subheader
+        >
+        <subheader
+          ><a href="mailto:nicholasfortune.contact@gmail.com" target="_blank"
+            >nicholasfortune.contact@gmail.com</a
+          ></subheader
+        >
+        <subheader><a href="https://github.com/nicholasfortune" target="_blank">github profile</a></subheader>
+        <p style="height: 0.5vw"></p>
+        <p style="text-align: justify">
+          I am an aspiring mechatronics engineer with a passion for designing, building, and programming physical and
+          digital systems. Whether working independently or in a team, I am committed to precision, efficiency, and
+          continuous learning in all of my projects. I’m proficient in web design, cinematography and PCB design, and I
+          specialize in CAD, software development and embeded systems.
+        </p>
+        <br />
+      </div>
+      <div class="aboutImage">
+        <img src="/home/images/Me.webp" class="aboutImage" alt="A photo of Nicholas Fortune" />
+      </div>
+    </div>
+    <div class="everythingElseContainer">
+      <h1 style="margin-top: 5vw">Skills</h1>
+      <p>Software</p>
+      <skills>
+        <skill><img src="images/logos/kicad.webp" class="skilllogo" /><skilltext>KiCad</skilltext></skill>
+        <skill><img src="images/logos/fusion-360.webp" class="skilllogo" /><skilltext>Fusion 360</skilltext></skill>
+        <skill><img src="images/logos/arduino-ide.webp" class="skilllogo" /><skilltext>Arduino IDE</skilltext></skill>
+        <skill><img src="images/logos/vscode.webp" class="skilllogo" /><skilltext>Visual Studio Code</skilltext></skill>
+        <skill
+          ><img src="images/logos/davinci-resolve.webp" class="skilllogo" /><skilltext
+            >DaVinci Resolve</skilltext
+          ></skill
+        >
+      </skills>
+      <p>Languages</p>
+      <skills>
+        <skill><img src="images/logos/python.webp" class="skilllogo" /><skilltext>Python</skilltext></skill>
+        <skill><img src="images/logos/lua.webp" class="skilllogo" /><skilltext>Lua</skilltext></skill>
+        <skill><img src="images/logos/c.webp" class="skilllogo" /><skilltext>C</skilltext></skill>
+        <skill><img src="images/logos/c++.webp" class="skilllogo" /><skilltext>C++</skilltext></skill>
+        <skill><img src="images/logos/java.webp" class="skilllogo" /><skilltext>Java</skilltext></skill>
+        <skill><img src="images/logos/html.webp" class="skilllogo" /><skilltext>HTML and CSS</skilltext></skill>
+        <skill><img src="images/logos/javascript.webp" class="skilllogo" /><skilltext>JavaScript</skilltext></skill>
+      </skills>
+      <p>Operating Systems</p>
+      <skills>
+        <skill><img src="images/logos/windows.webp" class="skilllogo" /><skilltext>Windows</skilltext></skill>
+        <skill><img src="images/logos/arch.webp" class="skilllogo" /><skilltext>Arch Linux</skilltext></skill>
+        <skill><img src="images/logos/ubuntu.webp" class="skilllogo" /><skilltext>Ubuntu Linux</skilltext></skill>
+      </skills>
+    </div>
     <!--Footer-->
     <div id="footer"></div>
-</body>
+  </body>
 </html>

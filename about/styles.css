@@ -1,100 +1,128 @@
-  .button {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding-top: 2vh;
-   padding-bottom: 2vh;
-   width: 8vw;
-   margin-inline: auto;
-   margin-bottom: 1vh;
-   height: 5vh;
-   text-align: center;
-   background-color: rgb(215, 219, 221);
-   transition: background-color 0.1s ease;
-   border: transparent;
-   text-decoration: none;
- }
- .button:hover {
-   background-color: rgb(163, 166, 168);
- }
- 
- .heroContainer {
+.heroContainer {
   padding-top: 7vh;
   position: relative;
   width: 100%;
   height: calc(25vw - 7vh);
   overflow: hidden;
   margin-bottom: 33vh;
-  } 
-  .heroImage {
-    width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
+}
+.heroImage {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.heroText {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  z-index: 1000;
+  font-family: "Arial", monospace;
+  font-weight: bold;
+  text-align: center;
+  font-size: 8vw;
+  user-select: none;
+  text-shadow: 2px 2px 40px rgba(255, 255, 255, 0.125);
+}
+subheader {
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  font-weight: lighter;
+  font-size: 0.75vw;
+  line-height: 1;
+  height: 0.75vw;
+  padding: 0.2vw;
+  margin-right: 0.5vw;
+  background-color: rgb(220, 236, 240);
+  border-radius: 0.25vw;
+}
+.aboutContainer {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.aboutImage {
+  order: 1;
+  height: 25vw;
+  width: auto;
+  margin: 0%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 2%;
+  box-shadow: 4px 4px 4px #00000044;
+}
+.aboutText {
+  flex-grow: 5;
+  order: 0;
+  width: 20%;
+  margin: auto;
+  padding-right: 2.5%;
+}
+skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+skill {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: lighter;
+  width: fit-content;
+  white-space: nowrap;
+  font-size: 1vw;
+  height: 1.25vw;
+  line-height: 1;
+  padding: 0.3vw;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  background-color: rgb(220, 236, 240);
+  border-radius: 0.25vw;
+}
+
+.skilllogo {
+  height: 100%;
+  margin-right: 0.5vw;
+}
+.everythingElseContainer {
+  width: 60%;
+  margin: auto;
+}
+@media (max-aspect-ratio: 1/1) {
+  .heroContainer {
+    height: calc(75vw - 7vh);
+    margin-bottom: 15vh;
   }
- .heroText {
-   width: 100%;
-   position: absolute;
-   top: 50%;
-   transform: translate(0%, -50%);
-   z-index: 1000;
-   font-family: 'Arial', monospace;
-   font-weight: bold;
-   text-align: center;
-   font-size: 8vw;
-   user-select: none;
-   text-shadow: 2px 2px 40px rgba(255, 255, 255, 0.125);
- }
- .aboutContainer {
-    display: flex;
-    width: 60%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;  
+  .heroText {
+    font-size: 16vw;
+    text-shadow: 2px 2px 80px rgba(255, 255, 255, 0.75);
+  }
+  .aboutContainer {
+    width: 90%;
+  }
+  subheader {
+    font-size: 2.4vw;
+    height: 2.4vw;
+    margin-right: 1;
   }
   .aboutImage {
-    order: 1;
-    height: 25vw;
-    width: auto;
-    margin: 0%;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 2%;
-    box-shadow: 4px 4px 4px #00000044;
+    display: none;
   }
-  .aboutText {
-    flex-grow: 5;
-    order: 0;
-    width: 20%;
-    margin: auto;
-    padding-right: 2.5%;
-    text-align: justify;
+  .everythingElseContainer {
+    width: 90%;
   }
-  .buttons {
-    display: flex;
-    width: 60%;
-    padding-left: 50%;
+  skill {
+    font-size: 3vw;
+    height: 4vw;
+    line-height: 1;
+    padding: 0.6vw;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 0.5vw;
   }
-  @media (max-aspect-ratio: 1/1) {
-    .heroContainer {
-      height: calc(75vw - 7vh);
-      margin-bottom: 15vh;
-      } 
-      .heroText {
-        font-size: 16vw;
-        text-shadow: 2px 2px 80px rgba(255, 255, 255, 0.75);
-      }
-      .aboutContainer {
-        width: 90%; 
-      }
-      .aboutImage {
-        height: 45vw;
-      }
-      .button {
-        width: 20vw;
-        margin-inline: 1vw;
-        height: 4vh;
-      }
-  }
+}
