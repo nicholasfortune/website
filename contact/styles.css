@@ -33,8 +33,6 @@ button {
   text-align: center;
   background-color: white;
   transition: background-color 0.1s ease;
-  border: transparent;
-  border: 2px solid black;
   border-radius: 0.25vw;
 }
 button:hover {
@@ -158,20 +156,21 @@ button:hover {
     padding-bottom: 2%;
     margin: 1%;
     margin-left: 60%;
-    text-align: center;
-    background-color: white;
-    transition: background-color 0.1s ease;
-    border: transparent;
+    border-radius: 1vw;
   }
   .subject {
     font-size: 3vw;
     width: 90%;
+  }
+  input {
+    border-radius: 1vw;
   }
   textarea {
     font-size: 4vw;
     resize: none;
     padding-bottom: 15%;
     margin-bottom: 2%;
+    border-radius: 1vw;
   }
   .contactImage {
     display: none;
