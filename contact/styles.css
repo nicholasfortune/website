@@ -1,3 +1,6 @@
+h1 {
+  margin-bottom: 1vh;
+}
 input {
   width: 100%;
   padding: 0.25vw;
@@ -69,13 +72,12 @@ button:hover {
 .container {
   position: relative;
   display: flex;
-  width: 50%;
+  width: fit-content;
   overflow: hidden;
-  height: fit-content;
+  height: 70vh;
   margin: auto;
-  background-color: #daf7ff;
+  background-color: #ebf4f7;
   border-radius: 3vw;
-
 }
 .containerOutline {
   position: absolute;
@@ -89,13 +91,13 @@ button:hover {
   pointer-events: none;
 }
 .contactContainer {
-  width: 45%;
+  width: 30vw;
   height: fit-content;
-  align-self: center;
   margin: auto;
-  margin-right: 5%;
+  margin-right: 0%;
   padding: 1%;
   padding-inline: 3%;
+  padding-left: 10%;
 }
 .inputtext {
   font-size: 0.8vw;
@@ -111,7 +113,7 @@ button:hover {
   margin: auto;
 }
 .contactImage {
-  height: 60vh;
+  height: 70vh;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -123,7 +125,19 @@ button:hover {
     font-size: 16vw;
     text-shadow: 2px 2px 80px rgba(255, 255, 255, 0.75);
   }
+  .container {
+    width: 90%;
+    height: fit-content;
+  }
+  .containerOutline {
+    display: none;
+  }
   .contactContainer {
+    margin: 10%;
+    margin-inline: 5%;
+    padding: 1%;
+    padding-inline: 3%;
+    align-self: center;
     width: 80%;
   }
   .flexcontainer {
@@ -156,9 +170,10 @@ button:hover {
   textarea {
     font-size: 4vw;
     resize: none;
-    border: transparent;
-    width: 95%;
     padding-bottom: 15%;
     margin-bottom: 2%;
+  }
+  .contactImage {
+    display: none;
   }
 }

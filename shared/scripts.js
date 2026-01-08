@@ -5,7 +5,7 @@ function hexToRgb(hex) {
   const b = parseInt(hex.substring(4, 6), 16);
   return { r, g, b };
 }
-const rgb = hexToRgb("#daf7ff");
+const rgb = hexToRgb("#ebf4f7");
 
 
 
@@ -52,7 +52,7 @@ function headerManager() {
   textTransform = 0
   if (heroImgAspectRatio > windowWidth/windowHeight) {
     textTransform = scrollY / 2 + headerHeight;
-    const newImgHeight = windowHeight + (windowHeight - -1 * (scrollY - windowHeight)) / 5;
+    const newImgHeight = (windowHeight + (windowHeight - -1 * (scrollY - windowHeight)) / 5) + 2;
     heroImg.style.width = 'fit-content';
     heroImg.style.height = `${newImgHeight}px`;
     const heroCenter = heroContainerHeight > heroImgHeight ? heroImgHeight / 2 : heroContainerHeight / 2;
@@ -63,7 +63,7 @@ function headerManager() {
     heroImg.style.transform = `translate(${-heroImgWidth / 2}px, ${imgTranslateY}px)`;
   } else {
     textTransform = scrollY / 2 + headerHeight;
-    const newImgWidth = windowWidth + (windowHeight - -1 * (scrollY - windowHeight)) / 5;
+    const newImgWidth = (windowWidth + (windowHeight - -1 * (scrollY - windowHeight)) / 5) + 2;
     heroImg.style.width = `${newImgWidth}px`;
     heroImg.style.height = `fit-content`;
     const heroCenter = heroContainerHeight > heroImgHeight ? heroImgHeight / 2 : heroContainerHeight / 2;
