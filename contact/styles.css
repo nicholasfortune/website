@@ -1,0 +1,190 @@
+h1 {
+  margin-bottom: 1vh;
+}
+input {
+  width: 100%;
+  padding: 0.25vw;
+  margin-bottom: 2%;
+  border: 2px solid black;
+  border-radius: 0.25vw;
+}
+.subject {
+  font-size: 1vw;
+  padding: 0.5%;
+  padding-right: 0%;
+  resize: none;
+  border: transparent;
+  width: 100%;
+  margin-bottom: 2%;
+}
+textarea {
+  resize: none;
+  width: 100%;
+  padding: 0.25vw;
+  margin-bottom: 2%;
+  border: 2px solid black;
+  border-radius: 0.25vw;
+}
+button {
+  width: auto;
+  padding: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  background-color: white;
+  transition: background-color 0.1s ease;
+  border-radius: 0.25vw;
+}
+button:hover {
+  background-color: rgb(215, 219, 221);
+}
+.heroContainer {
+  padding-top: 7vh;
+  position: relative;
+  width: 100%;
+  height: calc(25vw - 7vh);
+  overflow: hidden;
+  margin-bottom: 33vh;
+}
+.heroImage {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.heroText {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  z-index: 1000;
+  font-family: "Arial", monospace;
+  font-weight: bold;
+  text-align: center;
+  font-size: 8vw;
+  user-select: none;
+  text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.25);
+}
+.container {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  overflow: hidden;
+  height: 70vh;
+  margin: auto;
+  background-color: #ebf4f7;
+  border-radius: 3vw;
+  z-index: -2;
+}
+.containerOutline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 2.5vw);
+  height: calc(100% - 2.5vw);
+  border: 3px dashed black;
+  transform: translate(-50%, -50%);
+  border-radius: 2vw;
+  pointer-events: none;
+}
+.contactContainer {
+  width: 30vw;
+  height: fit-content;
+  margin: auto;
+  margin-right: 0%;
+  padding: 1%;
+  padding-inline: 3%;
+  padding-left: 10%;
+}
+.inputtext {
+  font-size: 0.8vw;
+  font-family: "Figtree", "Arial", sans-serif;
+}
+.flexcontainer {
+  display: flex;
+  flex-direction: row;
+}
+.inputbar {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.contactImage {
+  height: 70vh;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .heroContainer {
+    height: calc(75vw - 7vh);
+    margin-bottom: 15vh;
+  }
+  .heroText {
+    font-size: 16vw;
+    text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.75);
+  }
+  .container {
+    width: 90vw;
+    height: fit-content;
+  }
+  .containerOutline {
+    width: calc(100% - 5vw);
+    height: calc(100% - 5vw);
+    border: 2px dashed black;
+  }
+  .contactContainer {
+    margin: 10%;
+    margin-inline: 5%;
+    padding: 1%;
+    padding-inline: 3%;
+    align-self: center;
+    width: 80%;
+  }
+  .flexcontainer {
+    flex-direction: column;
+  }
+  .inputtext {
+    font-size: 3vw;
+  }
+  .inputbar {
+    font-size: 3.5vw;
+    width: 100%;
+    margin: 0%;
+  }
+  button {
+    width: 40%;
+    padding: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 1%;
+    margin-left: 61.5%;
+    border-radius: 1vw;
+    border: 1px solid black;
+  }
+  .subject {
+    font-size: 3vw;
+    width: 90%;
+  }
+  input {
+    border-radius: 1vw;
+    border: 1px solid black;
+  }
+  textarea {
+    font-size: 4vw;
+    resize: none;
+    padding-bottom: 15%;
+    margin-bottom: 2%;
+    border-radius: 1vw;
+    border: 1px solid black;
+  }
+  .contactImage {
+    width: 90vw;
+    height: fit-content;
+    bottom: 0px;
+    filter: blur(2px);
+    clip-path: polygon(100% 25%, 100% 100%, -5% 100%);
+    z-index: -1;
+    position: absolute;
+}
+}

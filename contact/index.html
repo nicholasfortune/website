@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="/Featured Image/Image.jpg" />
+    <meta name="title" content="Nicholas Fortune - Contact" />
+    <meta name="description" content="Nicholas Fortune's personal website, showcasing engineering projects and more." />
+    <title>Contact - Nicholas Fortune</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" type="text/css" href="/shared/shared.css" />
+    <link rel="stylesheet" type="text/css" href="/contact/styles.css" />
+    <script src="/shared/scripts.js" defer></script>
+  </head>
+  <body>
+    <!--Header-->
+    <div class="header" id="header"></div>
+
+    <!--Hero Image-->
+    <div class="heroContainer" id="heroContainer">
+      <picture>
+        <source srcset="/contact/images/high/HeroImg.webp" media="(min-width: 1001px)" />
+        <source srcset="/contact/images/HeroImg.webp" media="(max-width: 1000px)" />
+        <img src="/contact/images/HeroImg.jpg" alt="A man reading emails" class="heroImage" id="heroImage" />
+      </picture>
+      <div class="heroText" id="heroText">CONTACT</div>
+    </div>
+
+    <!--Body-->
+    <div class="container">
+      <div class="containerOutline"></div>
+      <div class="contactContainer">
+        <h1 style="line-height: 0.9;">Let's get in <span style="color: dodgerblue;">touch</span>.</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="2501db75-07c0-4391-8ba6-a067ef160a9b" />
+          <input type="hidden" name="subject" value="New Form Submission" />
+          <input type="hidden" name="redirect" value="https://nicholasfortune.ca/contact/thank-you/" />
+          <div class="inputbar">
+            <label for="name"><smalltext>Your Name / Company</smalltext></label>
+            <input type="text" id="name" class="inputtext" name="name" required />
+          </div>
+          <div class="inputbar" style="margin-bottom: 1vw;">
+            <label for="email"><smalltext>Your Email</smalltext></label>
+            <input type="email" id="email" class="inputtext" name="email" required />
+          </div>
+          <label for="message"><p>Message</p></label>
+          <textarea rows="6" id="message" name="message" class="inputtext" required></textarea>
+          <button type="submit"><smalltext>Submit</smalltext></button>
+        </form>
+      </div>
+      <img src="/contact/images/laptoo.webp" class="contactImage">
+    </div>
+
+    <!--Footer-->
+    <div id="footer"></div>
+  </body>
+</html>
