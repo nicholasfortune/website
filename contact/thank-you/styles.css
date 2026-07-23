@@ -1,17 +1,17 @@
 .heroContainer {
-  padding-top: 7vh;
   position: relative;
   width: 100%;
-  height: 93vh;
+  height: 100vh;
   overflow: hidden;
 }
-.heroImage {
+.heroImage2 {
   width: 100%;
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
   z-index: 0;
+  filter: blur(0.25vw);
+  bottom: 0px;
 }
 .heroText {
   width: 100%;
@@ -25,7 +25,7 @@
   text-align: center;
   font-size: 8vw;
   user-select: none;
-  text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.125);
+  text-shadow: 0px 0px 5vw rgba(255, 255, 255, 0.5);
 }
 .heroSub {
   width: 100%;
@@ -39,4 +39,24 @@
   padding-top: 5.5vw;
   font-size: 3vw;
   user-select: none;
+  text-shadow: 0px 0px 3vw rgba(255, 255, 255, 0.5);
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .heroImage2 {
+    width: auto;
+    height: 100%;
+    top: 50%;
+    transform: translate(-25%, -50%);
+    filter: blur(1vw);
+  }
+  .heroText {
+    font-size: 10vw;
+    text-shadow: 0px 0px 7vw rgba(255, 255, 255, 0.75);
+    padding-bottom: 6vw;
+  }
+  .heroSub {
+    font-size: 4vw;
+    text-shadow: 0px 0px 4vw rgba(255, 255, 255, 0.75);
+  }
 }

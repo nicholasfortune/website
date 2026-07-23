@@ -25,7 +25,7 @@
   text-align: center;
   font-size: 8vw;
   user-select: none;
-  text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.25);
+  text-shadow: 0px 0px 5vw rgba(255, 255, 255, 0.25);
 }
 subheader {
   display: inline-block;
@@ -101,7 +101,7 @@ skill {
   }
   .heroText {
     font-size: 20vw;
-    text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.75);
+    text-shadow: 0px 0px 7vw rgba(255, 255, 255, 0.75);
   }
   .aboutContainer {
     width: 90%;

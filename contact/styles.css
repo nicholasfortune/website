@@ -5,24 +5,15 @@ input {
   width: 100%;
   padding: 0.25vw;
   margin-bottom: 2%;
-  border: 2px solid black;
+  border: 0.1vw solid black;
   border-radius: 0.25vw;
-}
-.subject {
-  font-size: 1vw;
-  padding: 0.5%;
-  padding-right: 0%;
-  resize: none;
-  border: transparent;
-  width: 100%;
-  margin-bottom: 2%;
 }
 textarea {
   resize: none;
   width: 100%;
   padding: 0.25vw;
   margin-bottom: 2%;
-  border: 2px solid black;
+  border: 0.1vw solid black;
   border-radius: 0.25vw;
 }
 button {
@@ -32,6 +23,7 @@ button {
   padding-bottom: 1%;
   text-align: center;
   background-color: white;
+  border: 0.1vw solid black;
   transition: background-color 0.1s ease;
   border-radius: 0.25vw;
 }
@@ -65,7 +57,7 @@ button:hover {
   text-align: center;
   font-size: 8vw;
   user-select: none;
-  text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.25);
+  text-shadow: 0px 0px 5vw rgba(255, 255, 255, 0.25);
 }
 .container {
   position: relative;
@@ -84,7 +76,7 @@ button:hover {
   left: 50%;
   width: calc(100% - 2.5vw);
   height: calc(100% - 2.5vw);
-  border: 3px dashed black;
+  border: 0.15vw dashed black;
   transform: translate(-50%, -50%);
   border-radius: 2vw;
   pointer-events: none;
@@ -122,7 +114,7 @@ button:hover {
   }
   .heroText {
     font-size: 16vw;
-    text-shadow: 0px 0px 40px rgba(255, 255, 255, 0.75);
+    text-shadow: 0px 0px 7vw rgba(255, 255, 255, 0.75);
   }
   .container {
     width: 90vw;
@@ -131,7 +123,7 @@ button:hover {
   .containerOutline {
     width: calc(100% - 5vw);
     height: calc(100% - 5vw);
-    border: 2px dashed black;
+    border: 0.66vw dashed black;
   }
   .contactContainer {
     margin: 10%;
@@ -182,8 +174,8 @@ button:hover {
     width: 90vw;
     height: fit-content;
     bottom: 0px;
-    filter: blur(2px);
-    clip-path: polygon(100% 25%, 100% 100%, -5% 100%);
+    filter: blur(0.75vw);
+    clip-path: polygon(100% 31%, 100% 100%, 0% 100%);
     z-index: -1;
     position: absolute;
 }

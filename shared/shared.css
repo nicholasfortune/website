@@ -35,12 +35,14 @@ p {
   font-weight: normal;
   font-size: 1.3vw;
   margin: 0%;
+  z-index: inherit;
 }
 smalltext {
   font-family: "Figtree", "Arial", sans-serif;
   font-weight: lighter;
   font-size: 0.8vw;
   margin: 0%;
+  z-index: inherit;
 }
 hr {
   width: 60%;
@@ -49,6 +51,15 @@ hr {
   border: none;
   margin-top: 5vh;
   margin-bottom: 5vh;
+}
+footer {
+  height: 47vh;
+  position: relative;
+  align-self: center;
+  margin-top: 33vh;
+  overflow: hidden;
+  z-index: 1;
+  clip-path: inset(0px);
 }
 .text {
   color: black;
@@ -109,35 +120,43 @@ hr {
   color: black;
 }
 .footerContainer {
+  position: relative;
   align-self: center;
-  margin-top: 33vh;
   display: flex;
   background-color: #ebf4f7;
   padding-inline: 15%;
+  overflow: hidden;
   width: 70%;
-  height: 33vh;
+  height: 40vh;
 }
 .footerNavigationContainer {
+  position: relative;
   order: 0;
   margin: auto;
   width: 80%;
   padding-inline: 10%;
   display: flex;
+  z-index: 2;
 }
 .footerColumn {
+  position: relative;
   flex-direction: column;
   text-align: center;
   display: flex;
   font-size: 1vw;
   width: 100%;
+  z-index: 2;
 }
 .footerLinks {
+  position: relative;
   flex-grow: 5;
   order: 1;
   width: 30%;
   padding: 2rem;
+  z-index: 2;
 }
 .footerBottom {
+  position: relative;
   background-color: #1f8fff;
   padding-inline: 20%;
   height: 7vh;
@@ -150,6 +169,7 @@ hr {
   display: flex;
   height: 60%;
   justify-content: left;
+  z-index: 2;
 }
 .footerLogoContainer {
   display: flex;
@@ -157,13 +177,16 @@ hr {
   height: 100%;
   width: auto;
   padding-inline: 0.5vw;
+  z-index: 2;
 }
 .footerLogos {
+  position: relative;
   width: auto;
   height: 90%;
   margin-top: auto;
   margin-bottom: auto;
   object-fit: contain;
+  z-index: 2;
 }
 @media (max-aspect-ratio: 1/1) {
   h1 {
@@ -180,8 +203,14 @@ hr {
     margin-top: 2.5vh;
     margin-bottom: 2.5vh;
   }
+  footer {
+    margin-top: 15vh;	
+  }
   .headerImg {
     height: 60%;
+  }
+  .headerRight {
+    margin-left: 3vw;
   }
   .headerBold {
     display: none;
@@ -190,9 +219,7 @@ hr {
     font-size: 3.5vw;
   }
   .footerContainer {
-    margin-top: 15vh;
     padding: 0%;
-    padding-top: 5vw;
     width: 100%;
   }
   .footerLogoContainer {
